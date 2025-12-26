@@ -19,3 +19,12 @@ springdoc:
     tags-sorter: alpha
     doc-expansion: list
   writer-with-default-pretty-printer: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
